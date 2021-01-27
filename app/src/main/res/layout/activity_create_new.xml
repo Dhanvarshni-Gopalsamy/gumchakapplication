@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNew"
+    android:background="@drawable/imgbc">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorViolet">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/back1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_arrow_back"
+                />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/logo"
+                android:maxWidth="30dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="180dp"
+                android:text="PROJECT CREATION"
+                android:textColor="@color/colorYellow"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/title"
+                android:id="@+id/logout11"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/logout"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/lo"
+                android:layout_width="500dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif"
+            android:text="Create your awesome project"
+            android:textColor="#F9D71C"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:text="Photography is crucial part of Gumchak identity. Photos should always be professional and of high quality"
+            android:textColor="#FFF0F5"
+            android:textSize="20dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Enter your project name!"
+            android:textColorHint="#FFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+                android:textColor="#FFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="170dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/ic_next"
+            android:text="Next"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#663399" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/lo1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="-10dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="200dp"
+                android:maxHeight="400dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/danceper" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
