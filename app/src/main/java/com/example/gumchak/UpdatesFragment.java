@@ -61,9 +61,9 @@ public class UpdatesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_updates, container, false);
-        
+
         //logout alert dialog box
-        view.findViewById(R.id.logout5).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());

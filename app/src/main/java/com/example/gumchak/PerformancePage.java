@@ -31,7 +31,7 @@ TextView project_name;
         });
 
         //logout dialog
-        findViewById(R.id.logout12).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(PerformancePage.this);

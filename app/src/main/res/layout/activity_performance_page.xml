@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#8B008B">
+        android:background="@color/colorViolet">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="18dp"
                 android:layout_toEndOf="@id/title"
-                android:id="@+id/logout12"
+                android:id="@+id/logout"
                 android:layout_marginStart="30dp"
                 android:background="@drawable/logout"
                 />

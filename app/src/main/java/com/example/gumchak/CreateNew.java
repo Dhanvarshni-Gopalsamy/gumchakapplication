@@ -44,7 +44,7 @@ public class CreateNew extends AppCompatActivity {
         });
 
         //logout dialog
-        findViewById(R.id.logout11).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CreateNew.this);

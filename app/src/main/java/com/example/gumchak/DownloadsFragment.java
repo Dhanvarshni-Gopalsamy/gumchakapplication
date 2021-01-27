@@ -63,7 +63,7 @@ public class DownloadsFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_downloads, container, false);
 
         //logout alert dialog box
-        view.findViewById(R.id.logout3).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());

@@ -28,7 +28,7 @@ Dialog dialog;
         });
 
         //logout dialog
-        findViewById(R.id.logout41).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(EditProfile.this);

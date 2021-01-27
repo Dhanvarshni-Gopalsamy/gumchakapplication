@@ -84,7 +84,7 @@ public class HomeFragment extends Fragment {
 
 
         //logout alert dialog box
-        view.findViewById(R.id.logout1).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
