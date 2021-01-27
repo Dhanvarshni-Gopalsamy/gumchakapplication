@@ -9,20 +9,29 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class CreateNew extends AppCompatActivity {
 
     Button next,back;
+    static EditText pro_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new);
         next = (Button) findViewById(R.id.next);
+        //project name
+        pro_name = (EditText) findViewById(R.id.project_name);
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String str = pro_name.getText().toString();
                 Intent intent2 = new Intent(CreateNew.this, PerformancePage.class);
+                intent2.putExtra("message_key", str);
                 startActivity(intent2);
+
             }
         });
 
@@ -49,6 +58,8 @@ public class CreateNew extends AppCompatActivity {
             }
         });
 
+
     }
+
 
     }

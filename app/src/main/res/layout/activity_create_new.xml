@@ -91,7 +91,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif"
             android:text="Create your awesome project"
-            android:textColor="#F9D71C"
+            android:textColor="@color/colorYellow"
             android:textSize="24dp"
             android:textStyle="bold" />
 
@@ -114,14 +114,17 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="Enter your project name!"
+            android:id="@+id/project_nam"
             android:textColorHint="#FFF">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="15dp"
-                android:textColor="#FFF" />
+                android:hint="Enter your project name!"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/project_name"
+                android:drawableRight="@drawable/ic_baseline_create_new_folder_24"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
