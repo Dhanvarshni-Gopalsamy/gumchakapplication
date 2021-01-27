@@ -2,6 +2,7 @@ package com.example.gumchak;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -59,6 +60,22 @@ public class DownloadsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_downloads, container, false);
+        View view= inflater.inflate(R.layout.fragment_downloads, container, false);
+
+        //logout alert dialog box
+        view.findViewById(R.id.logout3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
+                LayoutInflater factory = LayoutInflater.from(v.getContext());
+                final View view = factory.inflate(R.layout.logout, null);
+                alertDialog.setView(view);
+
+                alertDialog.show();
+            }
+        });
+
+
+        return view;
     }
 }

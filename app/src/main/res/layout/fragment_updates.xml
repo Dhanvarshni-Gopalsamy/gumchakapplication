@@ -46,7 +46,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_toEndOf="@id/title"
-                    android:id="@+id/logout1"
+                    android:id="@+id/logout5"
                     android:layout_marginStart="90dp"
                     android:background="@drawable/logout"
                     />

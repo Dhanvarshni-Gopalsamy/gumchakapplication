@@ -3,6 +3,7 @@ package com.example.gumchak;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -70,6 +71,19 @@ public class MyaccountFragment extends Fragment {
                 Intent intent=new Intent(getActivity(),EditProfile.class);
                 intent.putExtra("cre","Create New");
                 startActivity(intent);
+            }
+        });
+
+        //logout alert dialog box
+        view.findViewById(R.id.logout4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
+                LayoutInflater factory = LayoutInflater.from(v.getContext());
+                final View view = factory.inflate(R.layout.logout, null);
+                alertDialog.setView(view);
+
+                alertDialog.show();
             }
         });
 

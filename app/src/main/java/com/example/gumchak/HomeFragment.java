@@ -2,9 +2,11 @@ package com.example.gumchak;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -22,6 +24,7 @@ import android.widget.Toast;
 public class HomeFragment extends Fragment {
     Context thiscontext;
     Dialog dialog;
+    Button log;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -70,7 +73,6 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
         Button create=view.findViewById(R.id.created);
-        Button logout1=view.findViewById(R.id.logout1);
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +81,21 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        //logout alert dialog box
+        view.findViewById(R.id.logout1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
+                LayoutInflater factory = LayoutInflater.from(v.getContext());
+                final View view = factory.inflate(R.layout.logout, null);
+                alertDialog.setView(view);
+
+                alertDialog.show();
+            }
+        });
+
 
         return view;
     }
