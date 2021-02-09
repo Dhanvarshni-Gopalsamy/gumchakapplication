@@ -9,12 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static com.example.gumchak.R.layout.activity_performance_page;
 
 public class PerformancePage extends AppCompatActivity {
 Button back;
+ImageView performancenext;
 TextView project_name;
     public static final String ARG_FROM_MAIN = "arg";
     @Override
@@ -22,6 +24,7 @@ TextView project_name;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_performance_page);
 
+        performancenext = (ImageView) findViewById(R.id.performanceimg1);
         back=findViewById(R.id.b);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +32,19 @@ TextView project_name;
                 finish();
             }
         });
+
+        //navigate to genre page
+        performancenext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentperfor = new Intent(PerformancePage.this, Genre.class);
+                startActivity(intentperfor);
+
+            }
+        });
+
+
 
         //logout dialog
         findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {

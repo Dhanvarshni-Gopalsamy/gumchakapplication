@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShotsPage"
+        android:background="@drawable/imgbc">
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorViolet"
+            android:id="@+id/positiontool">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ba"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_arrow_back"
+                    />
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logo"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/logo"
+                    android:maxWidth="30dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="190dp"
+                    android:text="INSTRUMENTS"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"/>
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@id/title"
+                    android:id="@+id/logout"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/logout"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positiontool">
+
+            <RelativeLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="130dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/positiontool">
+
+
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="Project"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/instrument"
+                    android:layout_width="match_parent"
+                    android:layout_height="231dp"
+                    android:layout_below="@id/Title"
+                    android:layout_marginTop="46dp"
+                    android:src="@drawable/flute" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instrument"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="Are u going to use Instruments?"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Choose Yes or No"
+                    android:textColor="@color/colorText"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_below="@id/text2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_yes"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="70dp"
+                        android:background="@drawable/yes_button"
+                        android:text="Yes"
+                        android:textColor="@color/colorText"></Button>
+
+                    <Button
+                        android:id="@+id/button_no"
+                        android:layout_width="75dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="60dp"
+                        android:background="@drawable/no_button"
+                        android:text="No"
+                        android:textColor="@color/colorText"></Button>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+

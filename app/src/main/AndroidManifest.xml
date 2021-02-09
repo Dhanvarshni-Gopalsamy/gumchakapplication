@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PerformancePage"></activity>
-        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".InstrumentsPage"></activity>
+        <activity android:name=".ShotsPage" />
+        <activity android:name=".PositionPage" />
+        <activity android:name=".Genre" />
+        <activity android:name=".PerformancePage" />
+        <activity android:name=".EditProfile" />
         <activity
             android:name=".CreateNew"
             android:label="@string/app_name" />
